@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Cadastre uma atração turística</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   
+<main>
+    <h1>Cadastre uma atração turística para aparecer no nosso portal</h1>
+    <p class="description">A melhores coisas da vida são compartilhadas. Não guarde só para você aquele lugar aonde viveu momentos incríveis! Cadastre uma atração turística no nosso portal e ajude outros turistas do mundo a viverem grandes experiências também.</p>
+
+    <section class="container">
+        <form name="cadastro-atracoes" action="" id="cadastro-atracoes" method="post">
+            <div class="form-layout">
+            <div class="column">
+            <fieldset class="user-data">
+                <legend>Dados do turista</legend>
+    
+                    <p>
+                        <label for="nome-user">Nome completo</label>
+                        <input type="text" id="nome-user" placeholder="Roberto de Almeida" required autofocus>
+                    </p>
+    
+                    <p>
+                        <label for="phone-user">Seu telefone:</label>
+                        <input type="tel" id="phone-user" placeholder="+55 22 3223 3223" required>
+                    </p>
+    
+                    <p>
+                    <label for="email-user">Seu email:</label>
+                    <input type="email" id="email-user" placeholder="robertodealmeida@gmail.com" required>
+                    </p>
+            </fieldset>
+            <fieldset class="attraction-data">
+            <legend>Informações da atração</legend>
+
+                <p>
+                    <label for="nome">Nome da atração:</label>
+                    <input type="text" id="nome" placeholder="Cristo Redentor" required>
+                </p>
+
+                <p>
+                    <label for="site">Site da atração:</label>
+                    <input type="url" id="site" placeholder="www.tremdocorcovado.rio/" required>
+                </p>
+
+                <p>
+                    <label for="phone">Telefone para contato:</label>
+                    <input type="tel" id="phone" placeholder="+55 22 3223 3223" required>
+                </p>
+
+                <p>
+                <label for="email">Email para contato:</label>
+                <input type="email" id="email" placeholder="corcovado@rio.com.br">
+                </p>
+
+                <p>
+                    <label for="price">Preço da entrada:</label>
+                    <input type="number" id="price" placeholder="30,00">
+                </p>
+
+                <p>
+                    <label for="foto">Foto da atração:</label>
+                    <input type="file" id="foto" placeholder="corcovado@rio.com.br">
+                </p>
+                </fieldset>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="column">
+                <fieldset class="attraction-recommendations">
+                    <legend>Recomendações aos turistas</legend>
+                    
+                    <p>
+                        <label for="categoria">Qual categoria melhor se adequa a atração?</label>
+                        <div class="block">
+                            <input type="radio" name="categoria" id="historico" value="">
+                            <label class="regular" for="historico">Histórico</label>
+                        </div>
+
+                        <div class="block">
+                            <input type="radio" name="categoria" id="natureza" value="">
+                            <label class="regular" for="natureza">Praias e natureza</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="categoria" id="parques" value="">
+                            <label class="regular" for="parques">Parques e atividades ao ar-livre</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="categoria" id="compras" value="">
+                            <label class="regular" for="compras">Compras</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="categoria" id="balada" value="">
+                            <label class="regular" for="balada">Vida noturna</label>
+                        </div>
+                    </p>
+
+                    <p class="small-font bold">Melhor período do ano para visitar</p>
+                    <p>
+                        <div class="block">
+                            <label for="mes-inicio">Início:</label>
+                            <input type="month" id="mes-inicio">
+                        </div>
+                        <div class="block">
+                            <label for="mes-fim">Fim:</label>
+                            <input type="month" id="mes-fim">
+                        </div>
+                    </p>
+
+                    <p class="small-font bold">De 0 a 10, o quanto você recomenda essa atração para...</p>
+                    <p>
+                        <label class="regular" for="recomenda-casais">Casais:</label>
+                        <input type="range" id="recomenda-casais" min="0" max="10" stop="1">
+                    </p>
+                    <p>
+                        <label class="regular" for="recomenda-familias">Famílias:</label>
+                        <input type="range" id="recomenda-familias" min="0" max="10" stop="1">
+                    </p>
+                    <p>
+                        <label class="regular" for="recomenda-criancas">Crianças:</label>
+                        <input type="range" id="recomenda-criancas" min="0" max="10" stop="1">
+                    </p>
+                    <p>
+                        <label class="regular" for="recomenda-estudantes">Estudantes:</label>
+                        <input type="range" id="recomenda-estudantes" min="0" max="10" stop="1">
+                    </p>
+                    <p>
+                    <label for="duracao">Duração recomendada para o passeio</label>
+                    <select class="block" name="duracao" id="duracao">
+                        <option value="" disabled selected>Duração recomendada</option>
+                        <option value="">>30 minutos</option>
+                        <option value="">30 min-1h</option>
+                        <option value="">1h-3h</option>
+                        <option value="">3h-6h</option>
+                        <option value="">6h+</option>
+                        <option value="">Pernoite</option>
+                    </select>
+                    </p>
+                    <p>
+                    <label for="informacoes">Breve relato da sua experiência</label><br>
+                    <textarea name="" id="informações" placeholder="Informações adicionais"></textarea>
+                    </p>
+                </fieldset>
+                </div>
+                </div>
+                <div class="form-footer">
+                <p>
+                    <input type="checkbox" name="autorizacao" id="autorizacao">
+                    <label class="regular" for="autorizacao">Eu desejo receber via email novidades, promoções e atualizações sobre as atrações.</label>
+                </p>
+                <button class="button" type="submit">Cadastrar atração</button>
+            </div>
+        </form>
+    </section>
+</main>
+<section class="image-side">
+    <img class="img-bottom" src="./images/side-image.png" alt="" title="">
+</section>
+
+</body>
